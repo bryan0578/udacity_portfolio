@@ -24,6 +24,37 @@ var gulp = require('gulp'),
   livereload = require('gulp-livereload'),
   del = require('del');
 
+// css
+gulp.task('css', function() {
+	gulp.src('scss/**/*.scss')
+    .pipe(sass({ style: 'expanded' }))
+    .pipe(autoprefixer('last 2 version'))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(minifycss())
+    .pipe(gulp.dest('dist/css'))
+    .pipe(notify({ message: 'SASS Compiled' }));
+});
 
+// Clean
+gulp.task('clean', function(cb) {
+  del(['dist/css/*'], cb)
+});
+
+// Default
+gulp.task('default', ['clean'], function() {
+  gulp.start('css');
+});
+
+// Watch and Live Reload
+gulp.task('watch', function() {
+
+  gulp.watch('scss/*.scss', ['css']);
+
+  livereload.listen();
+
+  gulp.watch(['dist/**']).on('change', livereload.changed);
+
+});
 
 
