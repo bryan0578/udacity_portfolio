@@ -1,0 +1,33 @@
+{
+  "name": "udacity_portfolio",
+  "version": "1.0.0",
+  "description": "Responsive portfolio website that showcases my udacity projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryan0578/udacity_portfolio.git"
+  },
+  "keywords": [
+    "responsive",
+    "front-end",
+    "back-end",
+    "full-stack",
+    "javascript",
+    "bootstrap",
+    "css",
+    "html5",
+    "python",
+    "bryan",
+    "cash",
+    "portfolio"
+  ],
+  "author": "Bryan Cash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bryan0578/udacity_portfolio/issues"
+  },
+  "homepage": "https://github.com/bryan0578/udacity_portfolio#readme"
+}
