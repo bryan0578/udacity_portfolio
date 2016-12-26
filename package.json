@@ -18,7 +18,13 @@
     "gulp-uglify": "^2.0.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.5"
+    "autoprefixer": "^6.6.0",
+    "browser-sync": "^2.18.5",
+    "cssnano": "^3.9.1",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^3.0.0",
+    "precss": "^1.4.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
