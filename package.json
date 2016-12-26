@@ -22,6 +22,7 @@
     "browser-sync": "^2.18.5",
     "cssnano": "^3.9.1",
     "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
     "gulp-postcss": "^6.2.0",
     "gulp-sass": "^3.0.0",
     "precss": "^1.4.0"
