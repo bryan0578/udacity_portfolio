@@ -9,11 +9,7 @@ Gulp Workflow
 // Install gulp plugins
 var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
-	sass = require('gulp-sass'),
-	postcss = require('gulp-postcss'),
-	autoprefixer = require('autoprefixer'),
-	precss = require('precss'),
-	cssnano = require('cssnano'),
+	sass = require('gulp-ruby-sass'),
 	imagemin = require('gulp-imagemin'),
 	cache = require('gulp-cache');
 
@@ -23,21 +19,10 @@ gulp.task('html', function() {
 	.pipe(gulp.dest('dist/'))
 });
 // Compile Sass into CSS
-gulp.task('sass', function() {
-	gulp.src('development/scss/**/*.scss')
-	.pipe(sass())
-	.pipe(gulp.dest('development/css'))
-});
-
-// optimize css and send it to production
 gulp.task('css', function() {
-    gulp.src('development/css/**/*.css')
-    .pipe(postcss([
-        precss(),
-        autoprefixer(),
-        cssnano()
-    ]))
-    .pipe(gulp.dest('dist/css'))
+	gulp.src('development/scss/**/*.scss')
+	.pipe(sass({ expanded: true }))
+	.pipe(gulp.dest('development/css'))
 });
  
 // Optimize Images
