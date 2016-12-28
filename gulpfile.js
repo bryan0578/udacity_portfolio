@@ -9,20 +9,22 @@ Gulp Workflow
 // Install gulp plugins
 var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
-	sass = require('gulp-ruby-sass'),
 	imagemin = require('gulp-imagemin'),
 	cache = require('gulp-cache');
+
+// Start browserSync server
+gulp.task('browserSync', function() {
+  browserSync({
+    server: {
+      baseDir: 'development'
+    }
+  })
+})
 
 // HTML
 gulp.task('html', function() {
 	gulp.src('development/*.html')
 	.pipe(gulp.dest('dist/'))
-});
-// Compile Sass into CSS
-gulp.task('css', function() {
-	gulp.src('development/scss/**/*.scss')
-	.pipe(sass({ expanded: true }))
-	.pipe(gulp.dest('development/css'))
 });
  
 // Optimize Images
@@ -37,29 +39,12 @@ gulp.task('images', function() {
 
 // Watch Files for changes
 gulp.task('watch', function() {
-	gulp.watch('development/**/*.html')
-	gulp.watch('development/scss/**/*.scss')
-	gulp.watch('development/css/**/*.css')
-	gulp.watch('development/images/**/*.+(png|jpg|jpeg|gif|svg)')
+  gulp.watch('development/*.html', browserSync.reload);
+	gulp.watch('development/css/*.css', browserSync.reload);
+	gulp.watch('development/images/**/*.+(png|jpg|jpeg|gif|svg)');
 });
 
-// Development server to watch and update all HTML, CSS, images and js files
-gulp.task('browser-sync', function () {
-   var files = [
-      'development/**/*.html',
-      'development/css/**/*.css',
-      'development/images/**/*.+(png|jpg|jpeg|gif|svg)',
-      'development/js/**/*.js'
-   ];
-
-   browserSync.init(files, {
-      server: {
-         baseDir: './development'
-      }
-   });
-});
-
-gulp.task('default', ['watch', 'html', 'sass', 'css', 'images']);
+gulp.task('default', ['watch', 'html', 'images', 'browserSync']);
 
 
 
