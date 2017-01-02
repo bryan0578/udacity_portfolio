@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,400|Open+Sans:300,400");
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #2d3c49;
+  font-weight: 300; 
+}
+
+.text-muted {
+	margin-top: 40px;
+  color: #7d97ad; 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.text-thin {
+  font-weight: 100; 
+}
+
+.title-super {
+  font-size: 60px;
+  color: #2d3c49; 
+}
+
+#logo {
+	margin-top: 20px;
+	max-width: 25%;
+}
+figcaption h4 {
+	font-size: 40px;
+	text-transform: uppercase;
+}
+figure {
+	font-size: 20px;
+	text-align: center;
+}
+ 
+hr {
+	border: 2px solid #7d97ad;
+}
+
+.deco {
+	margin-top: 15px;
+	height: 425px;
+	overflow: hidden;
+}
+
+.modal-title{
+	font-size: 40px;
+ 	color: #2d3c49; 
+ 	text-align: center;
+}
+.modal-body {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+

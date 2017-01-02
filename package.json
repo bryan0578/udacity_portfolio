@@ -17,6 +17,8 @@
   "devDependencies": {
     "browser-sync": "^2.18.5",
     "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-copy": "^0.1.0",
     "grunt-responsive-images": "^1.10.1",
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.5",
