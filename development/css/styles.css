@@ -6,6 +6,10 @@ body {
   font-weight: 300; 
 }
 
+.text-right {
+	margin-top: 30px;
+}
+
 .text-muted {
 	margin-top: 40px;
   	color: #7d97ad; 
@@ -23,8 +27,9 @@ body {
   color: #2d3c49; 
 }
 
+
 .logo {
-	margin-top: 20px;
+	margin-top: 25px;
 	max-width: 25%;
 }
 
@@ -40,6 +45,10 @@ figure {
  
 hr {
 	border: 2px solid #7d97ad;
+}
+
+.footer {
+	margin-bottom: 40px;
 }
 
 .modal-header {
