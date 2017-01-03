@@ -31,22 +31,13 @@ module.exports = function(grunt) {
           dest: 'development/images/'
         }]
       }
-    },
-    copy: {
-      main: {
-        files: [
-          // includes files within path 
-          {expand: true, flatten: true, src: 'development/images/*', dest: 'dist/images/', filter: 'isFile'},
-        ],
-      },
-    },
+    }
   });
 
 
 //load tasks
   grunt.loadNpmTasks('grunt-responsive-images');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   //run task
-  grunt.registerTask('default', ['responsive_images', 'copy']);
+  grunt.registerTask('default', ['responsive_images']);
 
 };
