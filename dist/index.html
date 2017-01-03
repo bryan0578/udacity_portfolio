@@ -18,69 +18,138 @@
 		<![endif]-->
 	</head>
 	<body>
+		<!-- Bootstrap Container -->
 		<div class="container">
-		    <div class="row">
+			<!-- Mobile Header Hidden on larger displays -->
+			<header class="mobile header">
+				<div class="row mobile-header-row-1">
+					<div class="col-md-12">
+						<img  class="center-block" id="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCI+PHRpdGxlPkFydGJvYXJkIDE8L3RpdGxlPjxwYXRoIGQ9Ik02NC45MiAyMS40M2EyOC4wOSAyOC4wOSAwIDAgMC00OS44MS0uNSAzOS43OCAzOS43OCAwIDAgMCAuMzggNDIuNDhjNS44MSA1LjcgMTYuMSAxMC41MSAyNC41MSAxMC41MXMxOS00LjgxIDI0LjQ3LTEwLjUyYTM5LjkzIDM5LjkzIDAgMCAwIDYuMzQtMjEuNzljLjAzLTcuOC0yLjM4LTE0LjE4LTUuODktMjAuMTh6bS03Ljc0IDMxLjc2YTI1LjY1IDI1LjY1IDAgMCAxLTM2LjQ3LTEuOTFjLjUzLTEuMTkgMS44LTEuNTUgNC4wNy0xLjU1IDIuOTMgMCA1LjQyLjI5IDguNjkuMjkgMy4wNyAwIDQuNjYtLjgyIDUuMjMtMi44OGguMTlDMzkuNDcgNDkuMiA0MSA1MCA0NC4xMyA1MHM1Ljc2LS4yOSA4LjY5LS4yOWMzLjEyIDAgNC4zNy42NyA0LjM3IDMuMjZ6bTIuMTktMi4yNmMtLjMxLTMtMS45My00LjQyLTYuMzItNC40Mi0zLjUgMC02IC40My05LjMxLjQzLTEuODIgMC0zLjY1LS44Ni0zLjctNC4xM2gtMi41YzAgMy4yNi0xLjg3IDQuMTMtMy43NCA0LjEzLTMuMjIgMC01Ljc2LS40My05LjI2LS40My0zLjIgMC00LjkzLjc3LTUuNzUgMi4zM2EyNS41NiAyNS41NiAwIDAgMS00LjYtMTQuNjZ2LS44QTI5IDI5IDAgMCAxIDE3Ljk0IDIxaC0uMDZhMjUuOSAyNS45IDAgMCAxIDUuMTktNi4xN2MyLjQzIDEuNTEgOS4yMyA1LjI0IDE2LjI5IDQuNiA2LjM4LS41OCAxMy4xNy0zLjY3IDE2LjQ0LTUuMzRhMjUuNzggMjUuNzggMCAwIDEgOC45IDEzLjQ4IDM1IDM1IDAgMCAxIC43OCA0LjM2Yy4wNy43Ny4xMSAxLjU0LjExIDIuMzJhMjUuNTkgMjUuNTkgMCAwIDEtNi4yMiAxNi42OHoiIGZpbGw9IiMwMmIzZTQiLz48cGF0aCBkPSJNNDUuOTIgMzQuMjdhMi42NCAyLjY0IDAgMCAwIDIuNzQtMi44MyAxLjYzIDEuNjMgMCAwIDAgMC0uNDhjMi41OSAwIDQuNjYgMS42MyA1Ljg2IDQuMzJsMi4zLTFjLTEuNjMtMy44OS00Ljg1LTYuMjktOS02LjI5LTIuODggMC00LjY2IDEuMjUtNC42NiAzLjMxYTIuNzYgMi43NiAwIDAgMCAyLjc2IDIuOTd6TTI4Ljg5IDM0LjQxYTIuODYgMi44NiAwIDEgMCAwLTUuNzEgMi44NiAyLjg2IDAgMSAwIDAgNS43MXoiIGZpbGw9IiMwMmIzZTQiLz48L3N2Zz4=" />
+					</div>
+				</div>
+				<div class="row mobile-header-row-2">
+					<div class="col-md-12 title">
+						<h1 class="title-super text-thin">Bryan Cash</h1>
+		        		<h4>Full Stack | Portfolio</h4>
+					</div>
+				</div>
+			</header>
+			<!-- End Mobile Header -->
+			<!-- Header for Medium and Large Deveices -->
+			<header class="row header-row-1">
 		    	<div class="col-md-6">
-		    		<div id="logo">
-		    			<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3Ny4xMiA4NC44Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzI4NjBhM308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXNzZXQgNzwvdGl0bGU+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzYiIGRhdGEtbmFtZT0iTGF5ZXIgNiI+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNDYgMzUuMjNhMy4zIDMuMyAwIDAgMCAzLjQyLTMuNTQgMiAyIDAgMCAwLS4wNi0uNmMzLjI0IDAgNS44MiAyIDcuMzIgNS40bDIuODgtMS4yYy0yLTQuODYtNi4wNi03Ljg2LTExLjIyLTcuODYtMy42IDAtNS44MiAxLjU2LTUuODIgNC4xNEEzLjQ1IDMuNDUgMCAwIDAgNDYgMzUuMjN6TTI0LjY3IDM1LjQxYTMuNTcgMy41NyAwIDEgMCAwLTcuMTQgMy41OCAzLjU4IDAgMSAwIDAgNy4xNHoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik02OS43MSAxOS4xOWEzNS4xMSAzNS4xMSAwIDAgMC02Mi4yNi0uNjJDMi45NCAyNi4yMSAwIDM0LjQ3IDAgNDQuNDJhNDkuOSA0OS45IDAgMCAwIDcuOTIgMjcuMjRDMTUuMTggNzguNzkgMjggODQuOCAzOC42MSA4NC44czIzLjgtNiAzMC41OS0xMy4xNGE0OS45IDQ5LjkgMCAwIDAgNy45Mi0yNy4yNGMwLTkuNzYtMy4wMi0xNy43My03LjQxLTI1LjIzek02MCA1OC44OWEzMi4wNyAzMi4wNyAwIDAgMS00NS41OS0yLjM5Yy42Ni0xLjQ5IDIuMjYtMS45NCA1LjA5LTEuOTQgMy42NiAwIDYuNzguMzYgMTAuODYuMzYgMy44NCAwIDUuODItMSA2LjU0LTMuNmguMjRjLjcyIDIuNTggMi42NCAzLjYgNi41NCAzLjYgNC4wOCAwIDcuMi0uMzYgMTAuODYtLjM2IDMuOSAwIDUuNDYuODQgNS40NiA0LjA4em0yLjc0LTIuODNjLS4zOS0zLjcxLTIuNDEtNS41Mi03LjktNS41Mi00LjM4IDAtNy41Ni41NC0xMS42NC41NC0yLjI4IDAtNC41Ni0xLjA4LTQuNjItNS4xNkgzNS41Yy0uMDYgNC4wOC0yLjM0IDUuMTYtNC42OCA1LjE2LTQgMC03LjItLjU0LTExLjU4LS41NC00IDAtNi4xNiAxLTcuMTkgMi45MmEzMS45NCAzMS45NCAwIDAgMS01Ljc2LTE4LjMydi0xYy41NC01LjUxIDEuOC0xMC44IDQuNjYtMTUuNTJoLS4wOGEzMi4zOCAzMi4zOCAwIDAgMSA2LjQ5LTcuNzFjMyAxLjg5IDExLjU0IDYuNTUgMjAuMzcgNS43NSA4LS43MiAxNi40Ni00LjU5IDIwLjU2LTYuNjhhMzIuMjIgMzIuMjIgMCAwIDEgMTEuMTUgMTYuOCA0My44IDQzLjggMCAwIDEgMSA1LjQ1Yy4wOSAxIC4xNCAxLjkyLjE0IDIuOWEzMiAzMiAwIDAgMS03LjgxIDIwLjkzeiIvPjwvZz48L2c+PC9zdmc+" />
-		    		</div>
+		    		<img id="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCI+PHRpdGxlPkFydGJvYXJkIDE8L3RpdGxlPjxwYXRoIGQ9Ik02NC45MiAyMS40M2EyOC4wOSAyOC4wOSAwIDAgMC00OS44MS0uNSAzOS43OCAzOS43OCAwIDAgMCAuMzggNDIuNDhjNS44MSA1LjcgMTYuMSAxMC41MSAyNC41MSAxMC41MXMxOS00LjgxIDI0LjQ3LTEwLjUyYTM5LjkzIDM5LjkzIDAgMCAwIDYuMzQtMjEuNzljLjAzLTcuOC0yLjM4LTE0LjE4LTUuODktMjAuMTh6bS03Ljc0IDMxLjc2YTI1LjY1IDI1LjY1IDAgMCAxLTM2LjQ3LTEuOTFjLjUzLTEuMTkgMS44LTEuNTUgNC4wNy0xLjU1IDIuOTMgMCA1LjQyLjI5IDguNjkuMjkgMy4wNyAwIDQuNjYtLjgyIDUuMjMtMi44OGguMTlDMzkuNDcgNDkuMiA0MSA1MCA0NC4xMyA1MHM1Ljc2LS4yOSA4LjY5LS4yOWMzLjEyIDAgNC4zNy42NyA0LjM3IDMuMjZ6bTIuMTktMi4yNmMtLjMxLTMtMS45My00LjQyLTYuMzItNC40Mi0zLjUgMC02IC40My05LjMxLjQzLTEuODIgMC0zLjY1LS44Ni0zLjctNC4xM2gtMi41YzAgMy4yNi0xLjg3IDQuMTMtMy43NCA0LjEzLTMuMjIgMC01Ljc2LS40My05LjI2LS40My0zLjIgMC00LjkzLjc3LTUuNzUgMi4zM2EyNS41NiAyNS41NiAwIDAgMS00LjYtMTQuNjZ2LS44QTI5IDI5IDAgMCAxIDE3Ljk0IDIxaC0uMDZhMjUuOSAyNS45IDAgMCAxIDUuMTktNi4xN2MyLjQzIDEuNTEgOS4yMyA1LjI0IDE2LjI5IDQuNiA2LjM4LS41OCAxMy4xNy0zLjY3IDE2LjQ0LTUuMzRhMjUuNzggMjUuNzggMCAwIDEgOC45IDEzLjQ4IDM1IDM1IDAgMCAxIC43OCA0LjM2Yy4wNy43Ny4xMSAxLjU0LjExIDIuMzJhMjUuNTkgMjUuNTkgMCAwIDEtNi4yMiAxNi42OHoiIGZpbGw9IiMwMmIzZTQiLz48cGF0aCBkPSJNNDUuOTIgMzQuMjdhMi42NCAyLjY0IDAgMCAwIDIuNzQtMi44MyAxLjYzIDEuNjMgMCAwIDAgMC0uNDhjMi41OSAwIDQuNjYgMS42MyA1Ljg2IDQuMzJsMi4zLTFjLTEuNjMtMy44OS00Ljg1LTYuMjktOS02LjI5LTIuODggMC00LjY2IDEuMjUtNC42NiAzLjMxYTIuNzYgMi43NiAwIDAgMCAyLjc2IDIuOTd6TTI4Ljg5IDM0LjQxYTIuODYgMi44NiAwIDEgMCAwLTUuNzEgMi44NiAyLjg2IDAgMSAwIDAgNS43MXoiIGZpbGw9IiMwMmIzZTQiLz48L3N2Zz4=" />
 		      	</div>
-		      	<div class="col-md-6 text-right text-uppercase">
+		      	<div class="col-md-6 text-right text-uppercase header-col-2">
 		        	<h1 class="title-super text-thin">Bryan Cash</h1>
 		        	<h4>Full Stack | Portfolio</h4>
 		      	</div>
-		    </div>
+		    </header>
+		    <!-- End Header -->
 		    <div class="row">
 		      	<div class="col-md-12">
 		        	<hr>
 		      	</div>
 		    </div>
-		    <div class="row">
+		    <section class="row background-filler">
 		      	<div class="col-md-12">
-		        	<img class="img-responsive" src="http://placekitten.com/g/1200/750" alt="">
+					<img class="img-responsive" src="images/background-1600_large_2x.jpg" alt="">
 		      	</div>
-		    </div>
-		    <div class="row">
-		      	<div class="col-md-12">
-		        	<h2 class="text-muted">Featured Work</h2>
-		      	</div>
-		    </div>
-		    <div class="row">
-		      	<div class="col-md-4">
-		      		<figure>
-				    	<picture>
-				        	<source media="(min-width: 750px)" srcset="images/Python_Movie_Website_Cropped-1600_large_2x.jpg 2x, images/Python_Movie_Website_Cropped-800_large_1x.jpg" />
-				          	<source media="(min-width: 500px)" srcset="images/Python_Movie_Website_Cropped-750_meduim.jpg" />
-				          	<img class="img-responsive" src="images/Python_Movie_Website_Cropped-500_small.jpg" alt="">
-				        </picture>
-				        <figcaption><h4>Python</h4></figcaption>
-				        <a href="https://github.com/bryan0578/Udacity_MovieWebsite_NanoDegree">View on Github</a>
-				    </figure>
-		      	</div>
-		      	<div class="col-md-4">
-		      		<figure>
-				    	<picture>
-				        	<source media="(min-width: 750px)" srcset="http://placekitten.com/g/1600/956 2x, http://placekitten.com/g/800/478" />
-				          	<source media="(min-width: 500px)" srcset="http://placekitten.com/g/750/448" />
-				          	<img class="img-responsive" src="http://placekitten.com/g/500/299" alt="">
-				        </picture>
-				        <figcaption><h4>Lorum Ipsum</h4></figcaption>
-				        <a href="https://github.com/bryan0578/Udacity_MovieWebsite_NanoDegree">View on Github</a>
-				    </figure>
-		      	</div>
-		     	<div class="col-md-4">
-		      		<figure>
-				    	<picture>
-				        	<source media="(min-width: 750px)" srcset="http://placekitten.com/g/1600/956 2x, http://placekitten.com/g/800/478" />
-				          	<source media="(min-width: 500px)" srcset="http://placekitten.com/g/750/448" />
-				          	<img class="img-responsive" src="http://placekitten.com/g/500/299" alt="">
-				        </picture>
-				        <figcaption><h4>Lorum Ipsum</h4></figcaption>
-				        <a href="https://github.com/bryan0578/Udacity_MovieWebsite_NanoDegree">View on Github</a>
-				    </figure>
-		      	</div>
-		    </div>
+		    </section>
+		    <footer class="footer">
+			    <div class="row">
+			      	<div class="col-md-12">
+			        	<h2 class="text-muted">Featured Work</h2>
+			      	</div>
+			    </div>
+			    <section class="row">
+			      	<article class="col-md-4">
+			      		<figure>
+					    	<picture>
+					        	<source media="(min-width: 750px)" srcset="images/Python-1600_large_2x.jpg 2x, images/Python-800_large_1x.jpg" data-toggle="modal" data-target="#project1"/>
+					          	<source media="(min-width: 500px)" srcset="images/Python-750_meduim.jpg" data-toggle="modal" data-target="#project1"/>
+					          	<img class="img-responsive" src="images/Python-500_small.jpg" alt="" data-toggle="modal" data-target="#project1">
+					        </picture>
+					        <figcaption><h4>Python</h4></figcaption>
+					        <a href="https://github.com/bryan0578/Udacity_MovieWebsite_NanoDegree">View on Github</a>
+					    </figure>
+			      	</article>
+			      	<article class="col-md-4">
+			      		<figure>
+					    	<picture>
+					        	<source media="(min-width: 750px)" srcset="images/portfolio-1600_large_2x.jpg 2x, images/portfolio-800_large_1x.jpg" data-toggle="modal" data-target="#project2"/>
+					          	<source media="(min-width: 500px)" srcset="images/portfolio-750_meduim.jpg" data-toggle="modal" data-target="#project2"/>
+					          	<img class="img-responsive" src="images/portfolio-500_small.jpg" alt="" data-toggle="modal" data-target="#project2">
+					        </picture>
+					        <figcaption><h4>Portfolio</h4></figcaption>
+					        <a href="https://github.com/bryan0578/udacity_portfolio">https://github.com/bryan0578/udacity_portfolio</a>
+					    </figure>
+			      	</article>
+			     	<article class="col-md-4">
+			      		<figure>
+					        <img class="img-responsive" src="http://placekitten.com/g/500/299" alt="" data-toggle="modal" data-target="#project3">
+					        <figcaption><h4>Lorum Ipsum</h4></figcaption>
+					        <a href="https://github.com/bryan0578/Udacity_MovieWebsite_NanoDegree">View on Github</a>
+					    </figure>
+			      	</article>
+			    </section>
+			</footer>
 		</div>
+
+		<!-- Project 1 Modal -->
+	    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <h4 class="modal-title" id="myModalLabel">PYTHON</h4>
+	                    <p>HTML | CSS | Python</p>
+	                </div>
+	                <div class="modal-body">
+	                    <img class="img-responsive" src="images/Python_Movie_Website_Cropped-500_small.jpg" alt="" data-toggle="modal" data-target="#project1">
+	                    Server-side code written in Python to store a list of my favorite movies, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers.
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+		
+		<!-- Project 2 Modal -->
+	    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <h4 class="modal-title" id="myModalLabel">Portfolio</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <img class="img-responsive" src="images/portfolio2-500_small.jpg" alt="" data-toggle="modal" data-target="#project2">
+	                    This was my first project in this class. I learned a lot about HTML and CSS.
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+		
+		<!-- Project 3 Modal -->
+	    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <h4 class="modal-title" id="myModalLabel">LORUM IPSUM</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <img class="img-responsive" src="http://placekitten.com/g/500/299" alt="" data-toggle="modal" data-target="#project1">
+	                    This was my first project in this class. I learned a lot about HTML and CSS.
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
