@@ -17,18 +17,18 @@ The Grunt task runner uses a plugin called responsive-images to make copies of a
 Download the repository from Github and save the folder on your desktop.
 ### Step 2.
 Open up terminal on Mac or shell program on Windows and navigate to the repository folder
-'''
+'''python
 cd Desktop/udacity_portfolio
 '''
 ### Step 3.
 Download or check to see if Node is installed. If not you can get it here https://nodejs.org/en/download/ To check if you have node installed type the following command
-'''
+'''python
 node -v
 '''
-'''
+
 ### Step 4.
 Download gulp and the following plugings: gulp-cache, gulp-imagemin, and browser-sync
-''' 
+''' python
 npm install --save-dev gulp
 npm install --save-dev gulp-cache
 npm install --save-dev gulp-imagemin
@@ -36,7 +36,7 @@ npm install --save-dev browser-sync
 '''
 ### Step 5.
 Run gulp and your browser will automatically open up the portfolio project.
-'''
+'''python
 gulp
 '''
 *To see the responsive portfolio rendered for different devices you can scale your browser down or you can use Chrome Developer Tools. 
