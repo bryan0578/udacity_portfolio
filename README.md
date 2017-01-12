@@ -39,3 +39,6 @@ gulp
 *To see the responsive portfolio rendered for different devices you can scale your browser down or you can use Chrome Developer Tools. 
 To open Chrome Developer Tools press* **F12, Ctrl + Shift + I** *on Windows and* **Cmd + Opt + I** *on Mac and press the rectangular icon at the top of the developer tools and you can change devices.*
 
+You can see the live at https://bryan0578.github.io/Udacity-Portfolio/ 
+
+
